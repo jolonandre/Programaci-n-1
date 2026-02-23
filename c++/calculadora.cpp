@@ -1,6 +1,10 @@
 #include <iostream>
-
 using namespace std;
+
+float sumar(float a, float b);
+float restar(float a, float b);
+float multiplicar(float a, float b);
+float dividir(float a, float b);
 
 int main() {
 
@@ -20,29 +24,50 @@ int main() {
     cout << "Ingrese el segundo numero: ";
     cin >> num2;
 
-    if(opcion == 1) {
-        resultado = num1 + num2;
-        cout << "Resultado: " << resultado << endl;
-    }
-    else if(opcion == 2) {
-        resultado = num1 - num2;
-        cout << "Resultado: " << resultado << endl;
-    }
-    else if(opcion == 3) {
-        resultado = num1 * num2;
-        cout << "Resultado: " << resultado << endl;
-    }
-    else if(opcion == 4) {
-        if(num2 != 0) {
-            resultado = num1 / num2;
+    switch(opcion) {
+        case 1:
+            resultado = sumar(num1, num2);
             cout << "Resultado: " << resultado << endl;
-        } else {
-            cout << "No se puede dividir entre cero." << endl;
-        }
-    }
-    else {
-        cout << "Opcion no valida." << endl;
+            break;
+
+        case 2:
+            resultado = restar(num1, num2);
+            cout << "Resultado: " << resultado << endl;
+            break;
+
+        case 3:
+            resultado = multiplicar(num1, num2);
+            cout << "Resultado: " << resultado << endl;
+            break;
+
+        case 4:
+            if(num2 != 0) {
+                resultado = dividir(num1, num2);
+                cout << "Resultado: " << resultado << endl;
+            } else {
+                cout << "No se puede dividir entre cero." << endl;
+            }
+            break;
+
+        default:
+            cout << "Opcion no valida." << endl;
     }
 
     return 0;
+}
+
+float sumar(float a, float b) {
+    return a + b;
+}
+
+float restar(float a, float b) {
+    return a - b;
+}
+
+float multiplicar(float a, float b) {
+    return a * b;
+}
+
+float dividir(float a, float b) {
+    return a / b;
 }
