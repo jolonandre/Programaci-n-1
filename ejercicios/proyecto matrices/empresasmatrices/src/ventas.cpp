@@ -1,38 +1,12 @@
-// Ejemplo de utilización de matrices codigo heredado de C
-//Declaraciòn de Bibliotecas y librerias estandar de C++
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
+#include "ventas.h"
 #include <iostream>
 #include <iomanip>
-
-using namespace std;
-
-//Declaraciòn de Constantes
-#define NUMERO_EMPRESAS 5
-#define NUMERO_MESES 4
-#define MAX_VENTA 100
-#define MIN_VENTA 0
-#define MAXIMA_LONGITUD_CADENA 100
-
-//Declaraciòn de Prototipos de Funciòn
-void llamaCiclo();
-int busquedaAleatorios(int minimo, int maximo);
-void llenarMatriz(float matriz[NUMERO_EMPRESAS][NUMERO_MESES + 1]);
-void imprimirMatrizLinea();
-float imprimirMatriz(float matriz[NUMERO_EMPRESAS][NUMERO_MESES + 1], char empresas[NUMERO_EMPRESAS][MAXIMA_LONGITUD_CADENA], string nombreGrupo);
-
-int main()
-{
-    srand(getpid());
-    llamaCiclo();
-    return 0;
-}
+#include <cstring>   // para memcpy
+#include <cstdlib>   // para rand
 
 void llamaCiclo()
 {
-    //Declaraciòn de matrices por cada grupo de empresas
+    //Declaraciï¿½n de matrices por cada grupo de empresas
     float matriz_empresa_1[NUMERO_EMPRESAS][NUMERO_MESES + 1];
     float matriz_empresa_2[NUMERO_EMPRESAS][NUMERO_MESES + 1];
     float matriz_empresa_3[NUMERO_EMPRESAS][NUMERO_MESES + 1];

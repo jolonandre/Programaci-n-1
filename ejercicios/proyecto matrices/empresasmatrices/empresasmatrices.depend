@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1776051311 source:c:\users\juana\downloads\programaci-n-1\ejercicios\proyecto matrices\empresasmatrices\src\ventas.cpp
+	"ventas.h"
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cstdlib>
+
+1776051173 c:\users\juana\downloads\programaci-n-1\ejercicios\proyecto matrices\empresasmatrices\include\ventas.h
+	<string>
+

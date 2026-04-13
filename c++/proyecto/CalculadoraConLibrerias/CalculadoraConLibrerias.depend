@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1743445502 source:c:\users\juana\downloads\programaci-n-1\c++\proyecto\calculadoraconlibrerias\main.cpp
+	<iostream>
+
+1774281927 source:c:\users\juana\downloads\programaci-n-1\c++\proyecto\calculadoraconlibrerias\src\calculadora.cpp
+	"calculadora.h"
+
+1774281997 c:\users\juana\downloads\programaci-n-1\c++\proyecto\calculadoraconlibrerias\include\calculadora.h
+
